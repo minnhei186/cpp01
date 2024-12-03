@@ -1,10 +1,10 @@
-CXX=c++
+CXX=clang++
 CXXFLAGS=-Wall -Wextra -Werror
 CXXVER=-std=c++98
 SRCS=$(wildcard src/*.cpp)
 OBJS=$(SRCS:.cpp=.o)
 INC=-Iinclude
-NAME=BraiiiiiiinnnzzzZ
+NAME=Violence
 
 all:$(NAME)
 
