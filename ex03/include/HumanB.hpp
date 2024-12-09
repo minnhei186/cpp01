@@ -6,7 +6,7 @@
 /*   By: hosokawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/30 12:11:16 by hosokawa          #+#    #+#             */
-/*   Updated: 2024/11/30 13:56:24 by hosokawa         ###   ########.fr       */
+/*   Updated: 2024/12/07 21:32:41 by hosokawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ class HumanB
 		Weapon *weapon;
 
 	public:
-		HumanB();
 		HumanB(std::string name);
 		~HumanB();
 		void setWeapon(Weapon& newWeapon);
