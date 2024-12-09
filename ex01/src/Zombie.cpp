@@ -6,7 +6,7 @@
 /*   By: hosokawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 12:41:07 by hosokawa          #+#    #+#             */
-/*   Updated: 2024/11/29 12:31:43 by hosokawa         ###   ########.fr       */
+/*   Updated: 2024/12/07 20:01:00 by hosokawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,12 @@ Zombie::Zombie():name("no info")
 
 Zombie::~Zombie()
 {
-	if(!this->name.empty())
-		std::cout<<this->name<<" was deleated"<<std::endl;
+	std::cout << this->name << " was deleted" << std::endl;
 }
 
 void Zombie::announce(void)
 {
-	if(this->name.empty())
-		std::cout<<"no info";
-	else
-		std::cout<<this->name<<std::endl;
+	std::cout<<this->name<< ": BraiiiiiiinnnzzzZ..."<<std::endl;
 
 }
 

@@ -6,7 +6,7 @@
 /*   By: hosokawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 12:41:39 by hosokawa          #+#    #+#             */
-/*   Updated: 2024/11/29 12:32:55 by hosokawa         ###   ########.fr       */
+/*   Updated: 2024/12/07 20:07:45 by hosokawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@ Zombie* zombieHorde(int N,std::string name)
 {
 	Zombie* zombie;
 	int i;
+
+	if(N<=0)
+	{
+		std::cout<<"Invalid number of zombies. more zombies!"<<std::endl;
+		exit(EXIT_FAILURE);
+	}
 
 	zombie=new Zombie[N];
 	if(zombie==NULL)
