@@ -6,7 +6,7 @@
 /*   By: hosokawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 12:36:51 by hosokawa          #+#    #+#             */
-/*   Updated: 2024/12/03 12:55:38 by hosokawa         ###   ########.fr       */
+/*   Updated: 2024/12/09 14:38:26 by hosokawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,19 @@ void Harl::complain(std::string level)
 	while(i<4)
 	{
 		if(level_list[i].compare(level)==0)
+		{
 			(this->*funcs[i])();
+			return;
+		}
 		i++;
 	}
+
+	std::cout<< "Invalid level: ";
+	std::cout<< level;
+	std::cout<< ". Please enter a valid level: DEBUG, INFO, WARNING, or ERROR.";
+	std::cout<< std::endl;
+
+
 }
 
 
